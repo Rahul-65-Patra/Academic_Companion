@@ -1,4 +1,5 @@
 import Subject from '../models/Subject.js';
+
 export const addSubject = async (req, res) => {
   try {
     const subject = new Subject(req.body);

@@ -56,7 +56,7 @@ export default function Assignment() {
           onChange={(e) => setNewAssignment({ ...newAssignment, dueDate: e.target.value })}
         />
         <button
-          className="bg-green-500 hover:bg-green-600 text-white px-4 py-2 rounded shadow-md transition"
+          className="bg-green-500 hover:bg-green-600 text-white px-4 py-2 rounded shadow-md transition cursor-pointer"
           onClick={handleAdd}
         >
           ➕ Add Assignment
@@ -78,7 +78,7 @@ export default function Assignment() {
               <button
                 onClick={() => markSubmitted(a._id)}
                 disabled={a.submitted}
-                className={`px-3 py-1 rounded text-sm font-medium transition ${
+                className={`px-3 py-1 rounded text-sm font-medium transition cursor-pointer ${
                   a.submitted
                     ? 'bg-gray-300 text-gray-600 cursor-not-allowed'
                     : 'bg-indigo-500 hover:bg-indigo-600 text-white'
@@ -88,7 +88,7 @@ export default function Assignment() {
               </button>
               <button
                 onClick={() => handleDelete(a._id)}
-                className="px-3 py-1 rounded text-sm font-medium bg-red-500 hover:bg-red-600 text-white transition"
+                className="px-3 py-1 rounded text-sm font-medium bg-red-500 hover:bg-red-600 text-white transition cursor-pointer"
               >
                 🗑️
               </button>

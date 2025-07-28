@@ -29,7 +29,7 @@ export default function Subject() {
 
   return (
     <div className="bg-white p-6 rounded-2xl shadow-md max-w-md mx-auto">
-      <h2 className="text-2xl font-semibold text-blue-700 mb-4">📘 Subjects</h2>
+      <h2 className="text-2xl font-bold text-indigo-600 mb-4">📘 Subjects</h2>
 
       <div className="space-y-3">
         <input
@@ -45,7 +45,7 @@ export default function Subject() {
           onChange={(e) => setNewSubject({ ...newSubject, notesLink: e.target.value })}
         />
         <button
-          className="w-full bg-blue-600 hover:bg-blue-700 text-white py-2 px-4 rounded-lg transition duration-300"
+          className="w-full bg-blue-600 hover:bg-blue-700 text-white py-2 px-4 rounded-lg transition duration-300 cursor-pointer"
           onClick={handleAdd}
         >
           ➕ Add Subject
@@ -71,7 +71,7 @@ export default function Subject() {
                 View Notes
               </a>
               <button
-                className="px-3 py-1 rounded text-sm font-medium bg-red-500 hover:bg-red-600 text-white transition"
+                className="px-3 py-1 rounded text-sm font-medium bg-red-500 hover:bg-red-600 text-white transition cursor-pointer"
                 onClick={() => handleDelete(s._id)}
                 title="Delete Subject"
               >

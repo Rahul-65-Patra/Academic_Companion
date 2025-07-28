@@ -63,7 +63,7 @@ export default function Register() {
 
         <button
           onClick={handleSubmit}
-          className="w-full bg-green-500 hover:bg-green-600 text-white py-3 rounded-lg font-semibold transition duration-200"
+          className="w-full bg-green-500 hover:bg-green-600 text-white py-3 rounded-lg font-semibold transition duration-200 cursor-pointer"
         >
           Register
         </button>
@@ -72,7 +72,7 @@ export default function Register() {
           Already have an account?{' '}
           <button
             onClick={() => navigate('/')}
-            className="text-blue-600 hover:underline font-medium"
+            className="text-blue-600 hover:underline font-medium cursor-pointer"
           >
             Login
           </button>

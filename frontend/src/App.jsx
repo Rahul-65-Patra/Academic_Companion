@@ -5,7 +5,7 @@ import Login from './components/Login';
 import Dashboard from './components/Dashboard';
 import Assignment from './components/Assignment';
 import Subject from './components/Subject';
-import Profile from './components/Profile';
+import ExamSchedule from './components/ExamSchedule';
 
 
 export default function App() {
@@ -17,7 +17,7 @@ export default function App() {
         <Route path="/dashboard" element={<Dashboard />} />
         <Route path="/dashboard/assignments" element={<Assignment />} />
         <Route path="/dashboard/subjects" element={<Subject />} />
-        <Route path="/dashboard/profile" element={<Profile />} />
+        <Route path="/dashboard/examschedule" element={<ExamSchedule />} />
       </Routes>
     </Router>
   );
